@@ -56,7 +56,11 @@ gab_value gab_lib_parse(gab_engine *gab, gab_value *argv, u8 argc) {
       h,
   };
 
-  return gab_bundle(gab, 3, keys, values);
+  gab_value result = gab_bundle(gab, 3, keys, values);
+
+  gab_dref(gab, result);
+
+  return result;
 }
 
 gab_value gab_mod(gab_engine *gab) {
