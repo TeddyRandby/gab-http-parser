@@ -1,5 +1,5 @@
-require('http-parser')
+'http-parser':require
 
-let method, url, headers, body = "GET /hello.html HTTP/1.1\nUser-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)\n\n":to_http
+method, url, headers, body = "GET /hello.html HTTP/1.1\nUser-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)\n\n":to_http
 
-print(method, url, headers, body)
+{ method, url, headers, body }:print

@@ -1,6 +1,4 @@
-#include <gab/core.h>
 #include <gab/gab.h>
-#include <gab/object.h>
 #include <picohttpparser.h>
 #include <stdio.h>
 
@@ -75,7 +73,7 @@ gab_value gab_mod(gab_engine *gab, gab_vm *vm) {
   };
 
   gab_value types[] = {
-      gab_type(gab, GAB_KIND_STRING),
+      gab_type(gab, kGAB_STRING),
   };
 
   gab_value values[] = {
